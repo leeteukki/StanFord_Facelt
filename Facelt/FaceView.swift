@@ -22,11 +22,11 @@ class FaceView: UIView {
     }
 
     private struct Ratios {
-        static let SkullRadiusToEyeOffset: CGFloat = 3
+        static let SkullRadiusToEyeOffset: CGFloat = 8
         static let SkullRadiusToEyeRadius: CGFloat = 10
         static let SkullRadiusToMouthWidth: CGFloat = 1
         static let SkullRadiusToMouthHight: CGFloat = 3
-        static let SkullRadiusToMoithOffset: CGFloat = 3
+        static let SkullRadiusToMouthOffset: CGFloat = 3
     }
     
     private enum Eye {
@@ -50,12 +50,12 @@ class FaceView: UIView {
 
     private func getEyeCenter(eye: Eye) -> CGPoint
     {
-        var eyeOffset = skullRadius / Ratios.SkullRadiusToEyeOffset
+        let eyeOffset = skullRadius / Ratios.SkullRadiusToEyeOffset
         var eyeCenter = skullCenter
         eyeCenter.y -= eyeOffset
         switch eye {
         case .Left: eyeCenter.x -= eyeOffset
-        case .Right: eyeCenter.y += eyeOffset
+        case .Right: eyeCenter.x += eyeOffset
         }
         return eyeCenter
     }
