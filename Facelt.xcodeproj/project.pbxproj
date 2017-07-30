@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		062B69C21F2DBA83006B1F3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062B69C11F2DBA83006B1F3F /* AppDelegate.swift */; };
-		062B69C41F2DBA83006B1F3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062B69C31F2DBA83006B1F3F /* ViewController.swift */; };
+		062B69C41F2DBA83006B1F3F /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062B69C31F2DBA83006B1F3F /* FaceViewController.swift */; };
 		062B69C71F2DBA83006B1F3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062B69C51F2DBA83006B1F3F /* Main.storyboard */; };
 		062B69C91F2DBA83006B1F3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062B69C81F2DBA83006B1F3F /* Assets.xcassets */; };
 		062B69CC1F2DBA83006B1F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062B69CA1F2DBA83006B1F3F /* LaunchScreen.storyboard */; };
 		062B69D71F2DBA83006B1F3F /* FaceltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062B69D61F2DBA83006B1F3F /* FaceltTests.swift */; };
 		062B69E21F2DBA83006B1F3F /* FaceltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062B69E11F2DBA83006B1F3F /* FaceltUITests.swift */; };
+		062B69F11F2DBCEB006B1F3F /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062B69F01F2DBCEB006B1F3F /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		062B69BE1F2DBA83006B1F3F /* Facelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062B69C11F2DBA83006B1F3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		062B69C31F2DBA83006B1F3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		062B69C31F2DBA83006B1F3F /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		062B69C61F2DBA83006B1F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		062B69C81F2DBA83006B1F3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062B69CB1F2DBA83006B1F3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		062B69DD1F2DBA83006B1F3F /* FaceltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		062B69E11F2DBA83006B1F3F /* FaceltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceltUITests.swift; sourceTree = "<group>"; };
 		062B69E31F2DBA83006B1F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		062B69F01F2DBCEB006B1F3F /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,10 @@
 		062B69C01F2DBA83006B1F3F /* Facelt */ = {
 			isa = PBXGroup;
 			children = (
-				062B69C11F2DBA83006B1F3F /* AppDelegate.swift */,
-				062B69C31F2DBA83006B1F3F /* ViewController.swift */,
+				062B69C31F2DBA83006B1F3F /* FaceViewController.swift */,
+				062B69F01F2DBCEB006B1F3F /* FaceView.swift */,
 				062B69C51F2DBA83006B1F3F /* Main.storyboard */,
-				062B69C81F2DBA83006B1F3F /* Assets.xcassets */,
-				062B69CA1F2DBA83006B1F3F /* LaunchScreen.storyboard */,
-				062B69CD1F2DBA83006B1F3F /* Info.plist */,
+				062B69EF1F2DBACC006B1F3F /* Suportting File */,
 			);
 			path = Facelt;
 			sourceTree = "<group>";
@@ -123,6 +123,17 @@
 				062B69E31F2DBA83006B1F3F /* Info.plist */,
 			);
 			path = FaceltUITests;
+			sourceTree = "<group>";
+		};
+		062B69EF1F2DBACC006B1F3F /* Suportting File */ = {
+			isa = PBXGroup;
+			children = (
+				062B69C11F2DBA83006B1F3F /* AppDelegate.swift */,
+				062B69C81F2DBA83006B1F3F /* Assets.xcassets */,
+				062B69CA1F2DBA83006B1F3F /* LaunchScreen.storyboard */,
+				062B69CD1F2DBA83006B1F3F /* Info.plist */,
+			);
+			name = "Suportting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				062B69C41F2DBA83006B1F3F /* ViewController.swift in Sources */,
+				062B69C41F2DBA83006B1F3F /* FaceViewController.swift in Sources */,
 				062B69C21F2DBA83006B1F3F /* AppDelegate.swift in Sources */,
+				062B69F11F2DBCEB006B1F3F /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
